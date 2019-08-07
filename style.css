@@ -1,0 +1,57 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;
+  background-color: rgb(25,25,25);
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  display: block;
+}
+
+.cursor::after {
+  content: " ";
+  display: inline-block;
+  height: 20PX;
+  width: 2px;
+  background-color: transparent;
+  animation: blinkTextCursor 500ms steps(2) infinite forwards;
+}
+
+.line{
+    font-size: 110%;
+    text-align: start;
+    line-height: 1.1;
+}
+
+@keyframes blinkTextCursor{
+  from{background-color: transparent;}
+  to{background-color: rgba(255,255,255,.75);}
+}
+
+	.active {
+		opacity: 1;
+	}
+
+  strong {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100px;
+}
+
+.carousel-link {
+  outline:none;
+  text-decoration: none;
+  color: inherit;
+}

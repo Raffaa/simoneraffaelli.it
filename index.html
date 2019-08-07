@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+   Just Me
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta name="theme-color" content="#000000">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="./OC2/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="./OC2/assets/owl.theme.default.min.css">
+  <!-- CSS Files -->
+</head>
+<body>
+  <div class="container" id="container">
+      <p class="line cursor" id="line-0" style="font-size: 150%;"></p>
+  </div>
+
+  <span style="height:25px;"></span>
+
+  <div class="contacts" id="contacts" style="display: none;">
+    <p class="line">You can downoad my CV <a href="./downloads/CV-Simone Raffaelli.pdf" target="_blank">HERE</a></p>
+    <p class="line">And here's my email: <a href="mailto:simoneraffaelli2@gmail.com">simoneraffaelli2@gmail.com</a></p>
+  </div>
+
+<span style="height:50px;"></span>
+
+  <div class="prjs-carousel" id ="prjs-carousel" style="display: none;">
+    <div class="owl-carousel owl-theme">
+    <a href="http://lenses.simoneraffaelli.it" target="_blank" class="carousel-link">
+      <div style="text-align: center;">
+        <img src="./img/clr.png" style="width: 100%; height: 40%;"></img>
+        <p style="font-size: 110%;">Contact Lens Reminder</p>
+        <p  style="font-size: 75%;">An Android Application</p>
+      </div>
+    </a>
+    <a href="http://raffaelli.me" target="_blank" class="carousel-link">
+      <div style="text-align: center;">
+        <img src="./img/raffaellime.png" style="width: 100%; height: 40%;"></img>
+        <p style="font-size: 110%;">raffaelli.me</p>
+        <p  style="font-size: 75%;">Parked website, I only liked domain name</p>
+      </div>
+    </a>
+    <a href="http://lenses.simoneraffaelli.it" target="_blank" class="carousel-link">
+      <div style="text-align: center;">
+        <img src="./img/clrweb.png" style="width: 100%; height: 40%;"></img>
+        <p style="font-size: 110%;">Contact Lens Reminder Website</p>
+        <p  style="font-size: 75%;">The website for my application :)</p>
+      </div>
+    </a>
+    <a href="https://bitbucket.org/FedeOx/oop1617-risiko/src/master" target="_blank" class="carousel-link">
+      <div style="text-align: center;">
+        <img src="./img/risk.png" style="width: 100%; height: 40%;"></img>
+        <p style="font-size: 110%;">Risk!!</p>
+        <p  style="font-size: 75%;">Well the title says all...</p>
+      </div>
+    </a>
+    <a href="#" target="_blank" class="carousel-link">
+      <div style="text-align: center;">
+        <img src="./img/pdf.png" style="width: 100%; height: 40%;"></img>
+        <p style="font-size: 110%;">Pdf Mail Merge</p>
+        <p  style="font-size: 75%;">A MacOS app that autocompile some modules</p>
+      </div>
+    </a>
+    <a href="https://foodonthego.altervista.org" target="_blank" class="carousel-link">
+      <div style="text-align: center;">
+        <img src="./img/fotg.png" style="width: 100%; height: 40%;"></img>
+        <p style="font-size: 110%;">Food On The Go</p>
+        <p  style="font-size: 75%;">JustEat-ish site, made for Uni project. Frontend and backend are functioning</p>
+      </div>
+    </a>
+    <div style="text-align: center;">
+      <img src="./img/mtc.png" style="width: 100%; height: 40%;"></img>
+      <p style="font-size: 110%;">More To Come</p>
+      <p  style="font-size: 75%;"... ... ...</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="typewriter.js"></script>
+  <script src="./OC2/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            slideTransition:'ease',
+            animateIn:'fadeIn',
+            animateOut:'fadeOut',
+            rewind:false,
+            dots: false,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:2,
+                },
+                1000:{
+                    items:4,
+                }
+            }
+          });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+div {
+	 display: block;
+}
+
+.containerv2 {
+	position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+	overflow: hidden;
+	background: #006DF0;
+	height: fit-content;
+	width: 100%;
+}
+
+.phoneImageDiv {
+	width: 100%;
+	height: 100%;
+    -webkit-mask-image: url(./../../../../res/img/g.svg);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size:  100% 100%;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 80%;
+	transform: rotate(-45deg);
+}
+
+.appVideo {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
+
+.introductionTxt {
+	position: relative;
+	vertical-align: middle;
+	margin: auto;
+	height: 100%;
+	align-items: center;
+}
+
+.txtArea {
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%,-50%);
+}
+
+.myHeader {
+	text-align: center;
+	align-items: center;
+	margin: auto;
+	height: fit-content;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.my-fab {
+	position: fixed !important;
+	z-index: 6;
+	margin: 20px;
+	bottom: 0px;
+	right: 0px;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase / 
+RewriteCond %{HTTP_HOST} lenses.simoneraffaelli.it
+RewriteCond %{REQUEST_URI} !lenses/
+RewriteRule ^(.*)$ /lenses/$1 [L]
